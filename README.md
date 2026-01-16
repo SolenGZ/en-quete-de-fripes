@@ -1,5 +1,5 @@
-## Projet_de_formation-En_quete_de_fripes
-Ce projet à pour objectif d’analyser le devenir des vêtements usagés et d’en évaluer les impacts à partir de données existantes.
+## en-quete-de-fripes
+Projet de data analyse réalisé dans le cadre du bootcamp Data Analytics du Wagon
 
 # 📊 En quête de fripes
 
