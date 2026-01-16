@@ -52,3 +52,9 @@ Il a pour objectif de :
 - présenter une problématique data réelle,
 - démontrer une capacité d’analyse et de restitution,
 - servir de base à une version plus technique intégrant code et analyses détaillées.
+
+
+## 📄 Cadrage initial du projet
+Un document de cadrage rédigé en amont est disponible dans le dossier `docs/`.
+Il présente la problématique, les questions de recherche et les sources de données
+ayant guidé l’analyse.
