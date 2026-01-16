@@ -58,3 +58,7 @@ Il a pour objectif de :
 Un document de cadrage rédigé en amont est disponible dans le dossier `docs/`.
 Il présente la problématique, les questions de recherche et les sources de données
 ayant guidé l’analyse.
+
+## Analyse
+Un notebook vise à documenter la démarche d’analyse de données ayant conduit à la présentation finale du projet « En quête de fripes ».
+en_quete_de_fripes_analysis.ipynb
