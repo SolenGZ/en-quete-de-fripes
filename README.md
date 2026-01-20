@@ -38,7 +38,7 @@ Le projet s’inscrit dans une approche classique de data analyse :
 # 👤 Contribution personnelle
 
 Dans le cadre de ce projet de groupe, ma contribution a porté notamment sur :
-- l’instigation du projet,
+- l’initiation du projet,
 - la collecte et le nettoyage des données,
 - la recherche et la structuration des indicateurs,
 - la realisation de visuels.
