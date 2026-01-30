@@ -44,8 +44,8 @@ J’aimerai donc répondre à trois grandes questions :
 Grâce aux bases de données listées ci-dessous, nous allons pouvoir cartographier les flux, quantifier les volumes et comparer ce que l’Europe importe vs ce qu’elle rejette.
 Au final, on cherchera à montrer si le système textile européen fonctionne comme une “économie linéaire mondialisée”, où l’on achète des textiles bon marché venus d’Asie et où l’on exporte les textiles usagés vers des pays moins équipés. 
 
-- BASES DE DONNEES
-Dépenses finales de consommation des ménages (“household final consumption expenditure”) classées par COICOP (Classification Of Individual Consumption According to Purpose). Le code “CO3” dans nama_10_co3_p3 indique ce classement par “purpose” (fonction de consommation) selon COICOP.
+BASES DE DONNEES
+- Dépenses finales de consommation des ménages (“household final consumption expenditure”) classées par COICOP (Classification Of Individual Consumption According to Purpose). Le code “CO3” dans nama_10_co3_p3 indique ce classement par “purpose” (fonction de consommation) selon COICOP.
 https://ec.europa.eu/eurostat/databrowser/view/nama_10_co3_p3/default/table?lang=en&category=na10.nama10.nama_10_hfc
 Permet de répondre à la question : 
 Combien les ménages européens dépensent en vêtements (“clothing and footwear”)?
