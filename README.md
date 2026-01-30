@@ -1,64 +1,163 @@
-## en-quete-de-fripes
-Projet de data analyse réalisé dans le cadre du bootcamp Data Analytics du Wagon
+# 📊 En quête de fripes  
+**Analyse des flux internationaux de vêtements usagés et neufs (2014–2024)**
 
-# 📊 En quête de fripes
+Projet de data analyse réalisé dans le cadre du **bootcamp Data Analytics – Le Wagon**.  
+Ce dépôt documente la démarche analytique, les sources de données et les traitements ayant conduit à la restitution finale du projet.
 
-Projet de data analyse
-Formation Le Wagon
+---
 
-# 📌 Contexte
+## 📌 Contexte
 
-Ce projet a été réalisé dans le cadre du bootcamp Data Analytics du Wagon.
-Il s’agit d’un projet de groupe, dont l’objectif était d’analyser le devenir des vêtements usagés et d’en évaluer les impacts à partir de données existantes.
+L’essor de la fast fashion et le développement de la seconde main soulèvent des questions majeures sur la durabilité du modèle textile européen.  
+Si le don et l’achat de vêtements d’occasion sont souvent perçus comme des pratiques locales et responsables, la réalité des flux internationaux reste peu visible.
 
-# 🎯 Objectifs du projet
+Ce projet vise à analyser, à partir de **données officielles et vérifiables**, la circulation des vêtements neufs et usagés entre l’Europe et le reste du monde, afin d’évaluer la soutenabilité réelle du système textile actuel.
 
-Comprendre les flux des vêtements usagés
+---
 
-Identifier les enjeux environnementaux et économiques associés
+## 🎯 Objectifs du projet
 
-Produire des indicateurs clairs et une restitution compréhensible pour un public non technique
+- Analyser les **flux d’importation et d’exportation de vêtements usagés (fripes)**  
+- Mettre en regard ces flux avec ceux des **vêtements neufs**
+- Identifier les **principaux pays partenaires et routes commerciales**
+- Questionner les idées reçues sur la seconde main et la durabilité
+- Produire des indicateurs clairs et une restitution accessible à un public non technique
 
-# 🗂️ Livrable principal
+---
 
-Présentation finale (réalisée sur Canva) :
-[En quête de fripes ](https://www.canva.com/design/DAG6o3WUdlE/abEEfK2YlPwsXOYzMc6tTQ/view?utm_content=DAG6o3WUdlE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h55b4f4d743)
+## ❓ Problématique
 
-👉 Cette présentation constitue le livrable de restitution, mais le présent dépôt GitHub vise à documenter la démarche data sous-jacente.
+**Comment circulent les vêtements neufs et usagés entre l’Europe et le monde, et que révèlent ces flux sur notre modèle de consommation et de gestion des déchets textiles ?**
 
-# 🔍 Démarche analytique (à détailler dans le code)
+---
 
-Le projet s’inscrit dans une approche classique de data analyse :
-- collecte et exploration de jeux de données existants,
-- nettoyage et structuration des données,
-- analyse d’indicateurs clés,
-- visualisation des résultats,
-- interprétation et synthèse.
+## 🧠 Hypothèses de départ
 
-# 👤 Contribution personnelle
+Le travail est volontairement parti de préjugés courants afin de les confronter aux données :
 
-Dans le cadre de ce projet de groupe, ma contribution a porté notamment sur :
-- l’initiation du projet,
+- Les vêtements donnés restent localement
+- La seconde main est forcément durable
+- Tous les vêtements donnés trouvent une seconde vie
+- Les textiles usagés sont majoritairement recyclés
+
+L’objectif était de **ne pas orienter l’analyse par la littérature existante**, mais de laisser les données guider les conclusions.
+
+---
+
+## 🔍 Démarche analytique
+
+1. **Cadrage du projet**  
+   - Définition des questions de recherche  
+   - Sélection de sources officielles et publiques  
+   - Identification des indicateurs pertinents  
+   👉 Voir : `docs/cadrage_initial.md`
+
+2. **Collecte des données**  
+   - Extraction des données de commerce international sur 10 ans (2014–2024)
+   - Sélection des codes produits :
+     - HS 6309 : vêtements usagés / friperie
+     - HS62 :  vêtements neufs
+   - Données en **poids (kg)** et **valeur (USD)**  
+   - Données par pays, par flux (import / export)
+
+3. **Traitement et analyse**
+   - Nettoyage et structuration des données (Python, SQL)
+   - Agrégation par pays, par année, par type de flux
+   - Analyses descriptives et comparatives
+   - Prédictions de tendances (Prophet)
+
+4. **Visualisation et exploration**
+   - Premiers graphiques exploratoires sur Looker Studio (travail collaboratif)
+   - Identification de pays récurrents dans les échanges
+   - Approfondissement des analyses par itérations successives
+
+5. **Synthèse et restitution**
+   - Structuration des résultats
+   - Mise en perspective des limites et biais des données
+   - Construction d’un discours nuancé (ni alarmiste, ni simpliste)
+
+---
+
+## 📊 Sources de données principales
+
+- **ONU – UN Comtrade**  
+  Données officielles de commerce international (imports / exports, par produit et pays)  
+  https://comtradeplus.un.org  
+
+- **ADEME – Points d’apport textile (Refashion)**  
+  Géolocalisation des points de collecte textile en France  
+  https://data.pointsapport.ademe.fr/datasets/donnees-eo-refashion  
+
+*(Toutes les sources utilisées sont publiques, officielles et vérifiables.)*
+
+---
+
+## 🗂️ Contenu du dépôt
+
+├── README.md
+├── docs/
+│ └── cadrage_initial.md
+├── notebooks/
+│ └── en_quete_de_fripes_analysis.ipynb
+├── presentation/
+│ └── en_quete_de_fripes.pdf
+
+
+---
+
+## 📄 Livrable principal
+
+👉 **Présentation finale du projet (Canva)**  
+[En quête de fripes – Présentation](https://www.canva.com/design/DAG6o3WUdlE/abEEfK2YlPwsXOYzMc6tTQ/view)
+
+Cette présentation constitue la restitution finale du projet.  
+Le présent dépôt GitHub vise à documenter **la démarche data complète** ayant conduit à ces résultats.
+
+---
+
+## 👤 Contribution personnelle
+
+Dans le cadre de ce projet de groupe, ma contribution a porté principalement sur :
+
+- l’initiation et le cadrage du projet,
 - la collecte et le nettoyage des données,
-- la recherche et la structuration des indicateurs,
-- la realisation de visuels.
+- l’extraction des données ONU (Python / SQL),
+- la structuration des indicateurs,
+- la réalisation de visualisations et l’analyse des résultats.
 
-(Les contributions individuelles sont précisées ici dans un souci de transparence.)
+Cette section est précisée dans un souci de **transparence vis-à-vis du travail collaboratif**.
 
-# 🚀 Objectif du dépôt
+---
 
-Ce dépôt fait partie de mon portfolio GitHub de Data Analyst junior.
-Il a pour objectif de :
-- présenter une problématique data réelle,
-- démontrer une capacité d’analyse et de restitution,
-- servir de base à une version plus technique intégrant code et analyses détaillées.
+## ⚠️ Limites de l’analyse
+
+- Manque de traçabilité complète des flux (pays de transit, doubles déclarations)
+- Données parfois partielles ou incohérentes selon les pays déclarants
+- Sensibilité des flux aux contextes géopolitiques (Brexit, guerre en Ukraine, routes maritimes)
+- Impacts indirects non mesurés :
+  - conditions sociales,
+  - consommation d’eau et d’énergie,
+  - pollution à long terme.
+
+Ces limites sont intégrées à l’interprétation des résultats.
+
+---
+
+## 🚀 Objectif du dépôt
+
+Ce projet s’inscrit dans mon **portfolio de Data Analyst junior**.  
+Il a pour objectif de démontrer :
+
+- une capacité à formuler une problématique data,
+- une maîtrise des étapes clés d’une analyse de données,
+- un esprit critique face aux données,
+- une capacité de restitution claire et argumentée.
+
+---
+
+## 📬 Contact
+
+N’hésitez pas à me contacter via LinkedIn pour échanger autour de ce projet ou de mon parcours en data analyse.
+https://www.linkedin.com/in/solen-grozel/
 
 
-## 📄 Cadrage initial du projet
-Un document de cadrage rédigé en amont est disponible dans le dossier `docs/`.
-Il présente la problématique, les questions de recherche et les sources de données
-ayant guidé l’analyse.
-
-## Analyse
-Un notebook vise à documenter la démarche d’analyse de données ayant conduit à la présentation finale du projet « En quête de fripes ».
-en_quete_de_fripes_analysis.ipynb
