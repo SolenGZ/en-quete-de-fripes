@@ -95,12 +95,19 @@ L’objectif était de **ne pas orienter l’analyse par la littérature existan
 ## 🗂️ Contenu du dépôt
 
 ├── README.md
+
 ├── docs/
+
 │ └── cadrage_initial.md
+
 ├── notebooks/
-│ └── en_quete_de_fripes_analysis.ipynb
+
+│ └── extraction_donnees_fripes_import_export_france.ipynb
+│ └── Modèle_prédictif_import_vêtement_usagés_en_France.ipynb
+
 ├── presentation/
-│ └── en_quete_de_fripes.pdf
+
+│ └── En_quete_de_fripes.pdf
 
 
 ---
