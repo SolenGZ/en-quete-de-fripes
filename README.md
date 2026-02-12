@@ -104,6 +104,11 @@ L’objectif était de **ne pas orienter l’analyse par la littérature existan
 
 │ └── extraction_donnees_fripes_import_export_france.ipynb
 │ └── Modèle_prédictif_import_vêtement_usagés_en_France.ipynb
+| └── Extraction_donnees_vetements_neufs_France_2014_2024.sql
+
+├── docs/
+
+│ └── Exploration_des_données_import_export_vêtements_usagés_FRANCE-BELGIQUE-ROYAUME_UNI-PAYS_BAS
 
 ├── presentation/
 
